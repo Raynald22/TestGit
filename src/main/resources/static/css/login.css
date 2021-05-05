@@ -1,0 +1,157 @@
+    * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.login,
+.image {
+	min-height: 100vh;
+}
+
+.bg-image {
+	width: 550px;
+	margin-right: 100px;
+	display: flex;
+}
+
+.login-heading {
+	font-weight: 700;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+}
+
+i {
+	padding-right: 15px;
+	color: #d9d9d9;
+	transition: .3s;
+}
+
+.pgender {
+	color: #d9d9d9;
+}
+
+.btn1 {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 50px;
+	outline: none;
+	background-color: #394EEA;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	transition: .3s;
+	cursor: pointer;
+	color: #fff;
+}
+
+.btn1:hover {
+	background-color: #5264eb;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.form-group>input,
+.form-group>label,
+.form-group>select {
+
+	margin: 0px 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #777;
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.form-group>label {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	/* Override default `<label>` margin */
+	/* line-height: 1.5;
+    color: #495057; */
+	cursor: text;
+	/* Match the input under the label */
+	border: 1px solid white;
+	border-radius: 0.25rem;
+	border: none;
+	transition: all 0.1s ease-in-out;
+	color: #707070;
+	transition: .3s;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.form-group input:not(:placeholder-shown) {
+	padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+	padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-group input:not(:placeholder-shown)~label {
+	padding-top: calc(var(--input-padding-y) / 3);
+	padding-bottom: calc(var(--input-padding-y) / 3);
+	font-size: 12px;
+	color: #777;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Fallback for Edge
+  -------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+	.form-group>label {
+		display: none;
+	}
+
+	.form-group input::-ms-input-placeholder {
+		/* color: #777; */
+	}
+}
+
+/* Fallback for IE
+  -------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+	.form-group>label {
+		display: none;
+	}
+
+	.form-group input:-ms-input-placeholder {
+		color: #777;
+	}
+}
+
+.social-icons img {
+	transition: 0.5s;
+	margin: 0 20px;
+}
+
+#footer {
+	padding-top: 50px;
+}
+
+.field-icon {
+	float: right;
+	margin-left: -25px;
+	margin-top: 15px;
+	position: relative;
+	z-index: 2;
+}
