@@ -10,4 +10,5 @@ import com.ogya.reynaldi.model.User;
 public interface UserRepository extends JpaRepository<User, Integer> {
  
  User findByEmail(String email);
+ //test2
 }
